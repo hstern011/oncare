@@ -126,7 +126,7 @@ class UpdateDeleteVisitAPIView(views.APIView):
     # To 'delete' a given visit id
     def delete(self, request, public_id):
         # Attempt to retrieve visit with the given id
-        visit_instance = Visit.objects.get(public_id=public_id)
+        visit_instance = Visit.objects.filter(public_id=public_id)
         if not visit_instance:
             return Response(
                 {"res": "Object with given id does not exists"}, 
