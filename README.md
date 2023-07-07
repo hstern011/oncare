@@ -63,3 +63,5 @@ There is also a basic admin UI for viewing the data stored. Go to the endpoint `
 
 # Next steps/limitations
 Given more time, I would have liked to explore further how to impose restrictions on the data at the database-level, in order to further protect the data from accidental mutations within the code.
+
+There is also some room for improvement with some of the error-handling/how some payloads are handled/validated. However, I felt that the focus on this task was on correctly handling valid data and maintaining immutability, with error-handling being a relatively straightforward later step.
