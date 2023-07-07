@@ -19,7 +19,7 @@ class LatestRevisionAPIView(views.APIView):
         serializer = RevisionSerializer(revision)
         return Response(serializer.data, status=status.HTTP_200_OK)
     
-# TODO: remove this view
+# Returns all revisions
 class AllRevisionsAPIView(views.APIView):
     def get(self, request):
         revisions = Revision.objects.order_by("-create_date_time")
@@ -104,7 +104,7 @@ class UpdateDeleteVisitAPIView(views.APIView):
             'end_date_time': request.data.get('end_date_time'),
             'client': request.data.get('client'), 
             'carer': request.data.get('carer'),
-            'public': public_id 
+            'public_id': public_id 
         }
 
         # Deserialize data
