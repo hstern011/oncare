@@ -1,4 +1,3 @@
-from django.shortcuts import render
 from django.core.exceptions import ValidationError
 from rest_framework import views
 from rest_framework.response import Response
