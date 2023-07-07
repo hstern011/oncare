@@ -134,7 +134,7 @@ class UpdateDeleteVisitAPIView(views.APIView):
             )
         
         # Create a new revision without the given visit
-        new_revision = new_revision(remove_id=public_id)
+        new_revision(remove_id=public_id)
         
         return Response(status=status.HTTP_200_OK)
 
