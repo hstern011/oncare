@@ -58,7 +58,7 @@ Deletes the visit specified by the `public_id` from the schedule.
 
 
 # Admin UI
-There is also a basic admin UI for viewing the data stored. Go to the endpoing `/schedule/admin`, and login in with the username `admin` and password `1234`. This will allow you to explore all Revisions and Visits in the system interactively. It has been set up to make all data read-only, even from this interface.
+There is also a basic admin UI for viewing the data stored. Go to the endpoint `/schedule/admin`, and login in with the username `admin` and password `1234`. This will allow you to explore all Revisions and Visits in the system interactively. It has been set up to make all data read-only, even from this interface.
 
 
 # Next steps/limitations
