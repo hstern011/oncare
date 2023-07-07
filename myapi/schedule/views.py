@@ -87,7 +87,7 @@ class UpdateDeleteVisitAPIView(views.APIView):
     def put(self, request, public_id):
         # Attempt to retrieve visit with the given id
         try:
-            visit_instance = Visit.objects.get(public_id=public_id)
+            visit_instance = Visit.objects.filter(public_id=public_id)
         except ValidationError: #Raised when a non-valid UUID is provided
             return Response(
                 {"res": "Not a valid id"}, 
